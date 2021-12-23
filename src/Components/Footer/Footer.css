@@ -1,0 +1,9 @@
+.Footer-container{
+    text-align: center;
+    background-color: #090;
+    border-top: 1px solid orange;
+    box-shadow: 0px 0px 20px orange;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
