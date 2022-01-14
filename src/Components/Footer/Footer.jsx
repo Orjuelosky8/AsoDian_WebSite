@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export default function footer(){
     return(
-        <div className="Footer-container">
+        <footer className="Footer-container">
             <div className="sections-container">
                 <div className="contact-container">
                     <div>
@@ -13,7 +13,7 @@ export default function footer(){
                         <p className="info-contacto">
                             <div className="contact-item">
                                 <div className="subtitle-contact">
-                                    <i className="fas fa-thumbtack contact-item contact-icon"></i>&nbsp Ubicación: 
+                                    <i className="fas fa-thumbtack contact-icon"></i>{' '}{'\u00A0'} Ubicación: 
                                 </div>
                                 <div className="description-subtitle-contact" id="city-location-contact">
                                     Bogotá, Colombia
@@ -21,7 +21,7 @@ export default function footer(){
                             </div>
                             <div className="contact-item">
                                 <div className="subtitle-contact" id="adress-title-contact">
-                                    <i className="fas fa-map-marked-alt contact-icon"></i>&nbsp Dirección: 
+                                    <i className="fas fa-map-marked-alt contact-icon"></i>{'\u00A0'}{'\u00A0'}Dirección: 
                                 </div>
                                 <div className="description-subtitle-contact">
                                     Cra. 7 No. 6C - 54, Piso 7 edificio Sendas - Nivel Central DIAN
@@ -29,7 +29,7 @@ export default function footer(){
                             </div>
                             <div className="contact-item">
                                 <div className="subtitle-contact">
-                                    <i className="fas fa-envelope-open-text contact-icon"></i>&nbsp Correo:
+                                    <i className="fas fa-envelope-open-text contact-icon"></i>{'\u00A0'}{'\u00A0'}Correo:
                                 </div>
                                 <div className="description-subtitle-contact" id="mail-contact">
                                     presidencia@asodian.org
@@ -37,7 +37,7 @@ export default function footer(){
                             </div>
                             <div className="contact-item">
                                 <div className="subtitle-contact">
-                                    <i className="fas fa-phone contact-icon"></i>&nbsp Teléfono: 
+                                    <i className="fas fa-phone contact-icon"></i>{' '}{'\u00A0'}Teléfono: 
                                 </div>
                                 <div className="description-subtitle-contact">
                                     (+57) 601 7428973 ext 936265
@@ -77,6 +77,6 @@ export default function footer(){
                 </div>
             </div>
             <div className="copyright"> © Derechos Reservados 2022 - ASODIAN</div>
-        </div>
+        </footer>
     )
 }

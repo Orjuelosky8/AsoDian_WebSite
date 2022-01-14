@@ -1,3 +1,243 @@
 .Archivos-container{
+    width: 100%;
+    margin: auto;
     margin-top: 90px;
+}
+
+#title-section-files{
+    text-align: center;
+    font-size: 33px;
+    text-shadow: 2px 2px 1px goldenrod;
+    font-weight: bold;
+    font-style: italic;
+    color: #009004;
+    cursor: pointer;
+    user-select: none;
+}
+
+.title-hr{
+    border-top: 8px solid green;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    width: 15%;
+    margin: auto;
+}
+
+.menu-and-files-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+#menu-container{
+    width: 20%;
+}
+
+#div-menu{
+    padding: 20px;
+    background: #fff;
+    background-image: url(https://www.wallpapertip.com/wmimgs/34-346972_parchment-wallpaper-hd.jpg);
+    background-size: cover;
+    border-radius: 10%;
+    width: 70%;
+    margin: auto;
+    margin-left: 15%;
+    border: 4px skyblue;
+    border-style: groove;
+    animation-name: menu-animation;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-delay: 50ms;
+    animation-timing-function: linear;
+    top: 90px;
+    position: sticky;
+}
+@keyframes menu-animation {
+    0%{transform: rotate(0deg);}
+    30%{transform: rotate(-8deg);}
+    70%{transform: rotate(8deg);}
+    100%{transform: rotate(0deg);}
+}
+
+#title-menu{
+    font-weight: 200;
+    text-align: left;
+}
+
+.options-menu ol{
+    list-style: square;
+    margin-left: -15px;
+}
+
+.options-menu ol li{
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+}
+
+.options-menu ol li a{
+    text-decoration: none;
+    color: red;
+}
+
+
+.all-groups-files-container{
+    background: lightgray;
+    display: block;
+    width: 75%;
+    margin: auto;
+}
+
+.title-group-files{
+    text-align: center;
+    color: rgb(0, 92, 212);
+    padding-top: 8px;
+    font-family: stencil, cursive, 'Times New Roman';
+    font-size: 25px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+}
+.title-group-files hr{
+    width: 90%;
+}
+.group-files-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.file-container{
+    height: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-radius: 5%;
+    background: #222;
+    flex: 28%;
+    max-width: 32%;
+    margin: 0 auto 15px auto;
+}
+
+.main-content-container-file{
+
+}
+
+.file-preview{
+    display: inline-block;
+    height: 180px;
+    width: 100%;
+}
+
+.file-preview:hover{
+    opacity: 0.8;
+    filter: grayscale(0.2);
+    cursor: pointer;
+}
+
+/* Debo activar este boton mediante Javascript; ¡ RECORDAR ! */
+.view-document-button{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    border: 5px groove gold;
+    background: rgb(255, 238, 142);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.file-container h3{
+    text-align: center;
+    color: greenyellow;
+    width: 70%;
+    margin: auto;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    /* padding-top: 5px; */
+    /* border-top: 2px dashed salmon; */
+}
+
+.file-container p{
+    margin-right: 5%;
+    margin-left: 5%;
+    color: #eee;
+}
+
+.pdf-container{
+    border-radius: 1%;
+    width: 100%;
+    height: 180px;
+    border-bottom: 8px solid rgb(0, 123, 172);
+}
+
+.button-download-file{
+    width: 30%;
+    margin-top: -10px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 2%;
+    border: 1px solid red;
+    background: green;
+    box-shadow: 3px 3px 4px;
+}
+.button-download-file:hover{
+    border-radius: 2%;
+    border: 1px solid white;
+    background: forestgreen;
+    box-shadow: 0px 0px 8px white;
+}
+
+.button-download-file a{
+    color: yellow;
+}
+
+.button-download-file a:hover{
+    color: skyblue;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    text-shadow: 1px 1px 1px red;
+}
+
+.bibliografia-document{
+    border-top: 2px solid rgb(0, 123, 172);
+    font-size: 12px;
+}
+
+.bibliografia-document ol{
+    display: flex;
+    list-style: none;
+    color: orange;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.bibliografia-document li{
+    cursor: help;
+}
+
+.bibliografia-document abbr{
+    text-decoration: none;
+}
+
+.separador-bibliografia{
+    height: 12px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border: rgb(0, 123, 172) 1px solid;
+}
+
+.author-file{
+    color: goldenrod;
 }

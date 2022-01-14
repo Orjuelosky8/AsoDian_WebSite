@@ -1,5 +1,217 @@
+/*Mirar la pagina de SEDIAN para aprender a jugar con la barra de desplazamiento jsjs */
+::-webkit-scrollbar{
+    height: auto;
+    width: 10px;
+    overflow: visible;
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30%;
+    background: #00b806;
+}
+
 .JuntaDirectiva-container{
     width: 88%;
     margin: auto;
     margin-top: 90px;
+    margin-bottom: 340px;
+    border: 2px solid black;
+    background: beige;
+}
+.subtitles-container{
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: center;
+    margin-top: 25px;
+}
+.hr{
+    width: 25%;
+}
+.text-centered-hr{
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.subtitle-main{
+    color: darkcyan;
+    font-weight: bold;
+    font-family: stencil, cursive, 'Times New Roman';
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container-all-junta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    padding: 10px;
+}
+
+.container-each-card{
+    background-image: url(https://i.pinimg.com/736x/78/69/45/7869459a488917aef60594876a7ef13b.jpg);
+    background-size: cover;
+    border: 0px solid orangered;
+    border-radius: 2%;
+    box-shadow: 9px 9px 1px rgb(19, 199, 3);
+    /* min-width: 250px; */
+    padding: 8px;
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 15%;
+    max-width: 15%;
+    align-items: center;
+    /* transition: 1s max-width; */
+}
+
+.comision-reclamos{
+    background-image: url(https://i.pinimg.com/originals/2c/32/3e/2c323ec94e0781cfbf57d1f358dcf635.jpg);
+    background-size: cover;
+    box-shadow: 9px 9px 1px orangered;
+}
+
+.container-inside{
+    margin: 8px;
+    padding: 10px;
+    /* border: 1px solid skyblue; */
+    border-radius: 10%;
+    box-shadow: -4px -4px 10px orangered;
+    background: greenyellow; /*rgb(255, 236, 129)*/
+    /* opacity: 0.9; NO SE POR QUÉ SE "MEZCLA" CON EL NAVBAR CUANDO TIENE OPACIDAD, TODO RARO XD */
+    text-align: center;
+}
+
+.comision-reclamos-inside{
+    background: orange;
+    box-shadow: -4px -4px 10px greenyellow;
+    /* opacity: 0.9; */
+}
+
+.name-member{
+    color: darkblue;
+    font-weight: bold;
+    margin: 4px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitles{
+    font-size: 16px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.img-member{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-member img{
+    width: 90%;
+    height: 90%;
+    /* display: block; */
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 11px #0063FF;
+    transition: 2s width;
+}
+
+.img-member img:hover{
+    width: 100%;
+}
+
+.cargo-member{
+    margin: -2px 0 -4px 0;
+}
+
+.cargo-member .charge{
+    color: blueviolet;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.info-member{
+    text-align: left;
+    list-style: square;
+}
+
+.info-member li{
+    padding: 2px;
+}
+
+.contact-member{
+    margin-top: -10px;
+}
+
+.mails-members{
+    font-size: 17px;
+    color: darkcyan;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:blue;
+    text-decoration-style: dotted;
+}
+
+@media (max-width: 2000px) {  
+    .container-each-card{
+        flex: 18%;
+        max-width: 18%;
+    }
+}
+
+@media (max-width: 1550px){
+    .container-each-card{
+        flex: 20%;
+        max-width: 22%;
+    }
+}
+
+@media (max-width: 1200px){  
+    .container-each-card{
+        flex: 25%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 880px){  
+    .container-each-card{
+        flex: 40%;
+        max-width: 40%;
+    }
+    .img-member{
+        width: 60%;
+    }
+}
+
+@media (max-width: 580px){
+    .container-all-junta{
+        flex-direction: column;
+    }
+    .container-each-card{
+        flex: 75%;
+        max-width: 88%;
+    }
+    .img-member{
+        width: 65%;
+    }
+    .subtitle-main{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 292px) {
+    .info-member{
+        display: none;
+    }
+    .contact-member{
+        display: none;
+    }
 }
