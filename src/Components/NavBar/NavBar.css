@@ -70,7 +70,7 @@
     box-shadow: 0px 0px 12px rgb(255, 145, 0);
 }
 
-.opciones-nav{
+#opciones-nav{
     position: fixed;
     right: 20px;
 }
@@ -107,7 +107,7 @@
     text-decoration: none;
 }
 
-.btnMenu{
+#btnMenu{
     color: #fff;
     display: none;
     background: none;
@@ -116,7 +116,7 @@
     top: 20px;
     cursor: pointer;
 }
-.btnMenu i{
+#btnMenu i{
     transition: 2s border, 1s background;
 }
 .btnMenu i:hover{
@@ -141,7 +141,7 @@
 }
 
 @media (max-width: 1220px){
-    .opciones-nav{
+    #opciones-nav{
         position: fixed;
         display: block;
         top: 0;
@@ -174,12 +174,22 @@
     .Razon-social{
         display: block;
     }
-    .opciones-nav{
+    #opciones-nav{
         display: none;
+        flex-direction: column;
+        background: rgb(36, 33, 33);
+        padding: 10px;
+        margin-top: 70px;
+        margin-right: -20px;
+        overflow: visible;
+        overflow-y: scroll;
     }
-    .btnMenu{
+    #btnMenu{
         display: block;
         position: fixed;
+    }
+    #hide-menu-options{
+        display: none;
     }
 }
 
@@ -205,7 +215,18 @@
     .Razon-social{
         display: none;
     }
-    .btnMenu{
+    #opciones-nav{
+        width: 100%;
+        height: calc(auto + 50px) !important;
+        opacity: 0.9;
+        overflow: scroll;
+    }
+    .btnNav{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #btnMenu{
         right: 5px;
     }
 }
@@ -230,7 +251,7 @@
     .title{
         font-size: 20px;
     }
-    .btnMenu{
+    #btnMenu{
         right: 4px;
         padding: 0;
     }

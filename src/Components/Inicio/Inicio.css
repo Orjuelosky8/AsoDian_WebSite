@@ -1,5 +1,188 @@
-.Inicio-container{
+#Inicio-container{
     text-align: left;
-    margin-top: 90px;
-    margin-bottom: 90px;
+}
+
+#title-section-inicio{
+    width: 6ch;
+}
+
+#inicioHeader{
+
+}
+
+#inicioSummaryContainerAll{
+    display: flex;
+}
+
+.inicioSummaryContainerOne{
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    background-color: skyblue;
+}
+
+.inicioImageContainer img{
+    width: 100%;
+}
+
+#inicioImageFMSContainer{
+    position: static;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    
+}
+
+#FSMLogo{
+    border: none;
+    border-radius: 0%;
+    width: 100%;
+    transition: 2s border-radius, 2s width, 1s border;
+}
+#FSMLogo:hover{
+    border: solid gray 1px;
+    border-radius: 10%;
+    width: 90%;
+    cursor: pointer;
+}
+
+
+/*PRUEBA*/
+
+#summaryItemsContainer_Inicio{  /* Contenedor de los 3 items en vertical */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+#summaryItemsContainer_Inicio > .SummaryContainerItem{ /* Contenedores individuales de cada uno de los que hereda del contenedor principal*/
+    width: 30%;
+    /* flex: 0 0 auto; */
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border: 1px solid #dee2e6;
+    margin-right: 5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #eee;
+}
+#summaryItemsContainer_Inicio > .SummaryContainerItem:hover{
+    box-shadow: 1px 1px 20px #d2d2d2;
+}
+
+.Header_SummaryContainerItem {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+}
+
+#FirstHeader_SummaryContainerItem{
+    box-shadow: 1px 7px 15px #a2a2a2;
+    margin: -15px -15px 0px -15px;
+    height: 80px;
+    background: linear-gradient(90deg, #2e31eb, #0074e0);
+}
+#SecondHeader_SummaryContainerItem{
+    box-shadow: 1px 7px 15px #a2a2a2;
+    margin: -15px -15px 0px -15px;
+    height: 80px;
+    background: linear-gradient(-90deg, rgb(182, 2, 2), #ff3c00);
+}
+#SecondHeader_SummaryContainerItem > h2{
+    margin-top: 8px;
+}
+#ThirdHeader_SummaryContainerItem{
+    box-shadow: 1px 7px 15px #a2a2a2;
+    margin: -15px -15px 0px -15px;
+    height: 80px;
+    background: linear-gradient(-90deg, greenyellow, green);
+}
+
+.title_HeaderSummaryContainerItem{
+    text-align: center;
+    font-size: 28px;
+    color: #eee;
+    font-weight: bold;
+    font-family: RockWell, helvetica, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+/* .card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+} */
+
+.bodyItem {
+    /* flex: 1 1 auto; */
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.text_bodyItem{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#Second_textBodyItem{
+    font-size: 17px;
+
+}
+
+#buttonMoreInfoContainer{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#buttonMoreInfoContainer button{
+    font-size: 22px;
+    color: white;
+    background-color: rgb(21, 35, 61);
+    /* background: linear-gradient(90deg, #0a5eac, white, #04bd0e); */
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 4px solid gray;
+    border-bottom: 4px solid gray;
+    border-radius: 25px;
+    max-width: 350px;
+    min-height: 75px;
+    margin-left: -10px;
+    font-family: cursive, "Helvetica Neue";
+    transition: 2s margin-top, 2s margin-left, 4s color, 2s font-weight;
+    cursor: pointer;
+}
+#buttonMoreInfoContainer button:hover{
+    color: black;
+    background: linear-gradient(90deg, white, orangered, white);
+    background: linear-gradient(90deg, #0a5eac, orangered, #04bd0e);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.insideButtonInfo{
+    display: flex;
+}
+
+#ArrowbuttonMoreInfo{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+@media (max-width: 1600px) {
+    #summaryItemsContainer_Inicio{  
+        width: 98%;
+    }
+    #SecondHeader_SummaryContainerItem > h2{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1200px){ /*contenedores Responsive*/
+
 }

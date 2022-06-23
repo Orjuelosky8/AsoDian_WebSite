@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Inicio from './Components/Inicio/Inicio';
@@ -13,15 +13,16 @@ import Footer from './Components/Footer/Footer';
 import NotFound from './Components/NotFound/Notfound';
 
 // export default class App extends React.Component {
-  function Front(){
+function Front(){
   return(
     <BrowserRouter>
       <NavBar/>
       <Routes>
         <Route path="*" element={<NotFound/>}/>
+        <Route path="/Inicio" element={<Navigate  to="/"/>} /> {/* Se usa redirect */}
         <Route path="/" element={<Inicio/>}/>
         <Route path="/Historia" element={<History/>}/>
-        <Route path="/Quienes-Somos" element={<Nosotros/>}/>
+        <Route path="/QuienesSomos" element={<Nosotros/>}/>
         <Route path="/JuntaDirectiva" element={<JuntaDirectiva/>}/>
         <Route path="/Convenios" element={<Convenios/>}/>
         <Route path="/Afiliacion" element={<Afiliacion/>}/>

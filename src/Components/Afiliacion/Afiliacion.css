@@ -1,3 +1,54 @@
-.Afiliacion-container{
-    margin-top: 90px;
+#Afiliacion-container{
+    text-align: center;
+    padding-top: 25px;
+} 
+
+#title-section-afiliation{
+    width: 10.4ch;
+}
+
+
+.afiliation-textp{
+    font-family: Rockwell, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 25px 20px 25px 20px;
+    font-weight: 500;
+}
+
+#hr-afterPreview{
+    border: none;
+    border-top: 3px dotted green;
+    width: 60%;
+    /* border-style: groove; */
+}
+
+#preview-formato-afiliacion{
+    width: 75%;
+    height: 1000px;
+    margin: auto;
+    display: block;
+    border-radius: 1%;
+}
+
+#afiliationWarning{
+    font-size: 11px;
+}
+
+#redirectEstatutos{
+    color: rgb(255, 102, 0);
+}
+
+@media (max-width: 800px){
+    .afiliation-textp{
+        font-size: 15px;
+    }
+    #preview-formato-afiliacion{
+        width: 85%;
+        height: 450px;
+        border-radius: 2%;
+    }
+    #afiliationWarning{
+        font-size: 7px;
+    }
 }

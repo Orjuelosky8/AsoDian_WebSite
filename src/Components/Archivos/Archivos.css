@@ -1,27 +1,5 @@
-.Archivos-container{
-    width: 100%;
-    margin: auto;
-    margin-top: 90px;
-}
-
 #title-section-files{
-    text-align: center;
-    font-size: 33px;
-    text-shadow: 2px 2px 1px goldenrod;
-    font-weight: bold;
-    font-style: italic;
-    color: #009004;
-    cursor: pointer;
-    user-select: none;
-}
-
-.title-hr{
-    border-top: 8px solid green;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-    width: 15%;
-    margin: auto;
+    width: 8ch;
 }
 
 .menu-and-files-container{
@@ -35,7 +13,6 @@
 
 #div-menu{
     padding: 20px;
-    background: #fff;
     background-image: url(https://www.wallpapertip.com/wmimgs/34-346972_parchment-wallpaper-hd.jpg);
     background-size: cover;
     border-radius: 10%;
@@ -100,7 +77,7 @@
     margin-bottom: -20px;
 }
 .title-group-files hr{
-    width: 90%;
+    width: 100%;
 }
 .group-files-container{
     display: flex;
@@ -112,14 +89,12 @@
 
 .file-container{
     height: auto;
-    margin-left: 8px;
-    margin-right: 8px;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-radius: 5%;
     background: #222;
-    flex: 28%;
-    max-width: 32%;
+    flex: 20%;
+    max-width: 19%;
     margin: 0 auto 15px auto;
 }
 
@@ -141,7 +116,7 @@
 
 /* Debo activar este boton mediante Javascript; ¡ RECORDAR ! */
 .view-document-button{
-    display: none;
+    display: block;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -176,6 +151,11 @@
     border-bottom: 8px solid rgb(0, 123, 172);
 }
 
+.iframe-pdf{
+    width: 100%;
+    height: 50%;
+}
+
 .button-download-file{
     width: 30%;
     margin-top: -10px;
@@ -208,6 +188,7 @@
 .bibliografia-document{
     border-top: 2px solid rgb(0, 123, 172);
     font-size: 12px;
+    user-select: none;
 }
 
 .bibliografia-document ol{
@@ -240,4 +221,73 @@
 
 .author-file{
     color: goldenrod;
+}
+
+@media (max-width: 2600px) {
+    .file-container{
+        height: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-radius: 5%;
+        background: #222;
+        flex: 25%;
+        max-width: 24%;
+        margin: 0 auto 15px auto;
+    }
+}
+@media (max-width: 1800px) {
+    .file-container{
+        height: auto;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-radius: 5%;
+        background: #222;
+        flex: 28%;
+        max-width: 32%;
+        margin: 0 auto 15px auto;
+    }
+}
+/*circuitverse.org*/
+@media (max-width: 1200px){
+    .menu-and-files-container{
+        flex-direction: column;
+    }
+    #menu-container{
+        width: 100%;
+    }
+    #div-menu{
+        width: 40%;
+        margin: auto;
+        margin-bottom: 60px;
+        margin-top: 20px;
+        position: static;
+        text-align: center;
+        animation: none;
+    }
+    .all-groups-files-container{
+        width: 96%;
+    }
+    .file-container{
+        flex: 40%;
+        max-width: 44%;
+    }
+}
+
+@media (max-width: 720px){
+    .file-container{
+        flex: 70%;
+        max-width: 70%;
+    }
+    #div-menu{
+        width: 65%;
+    }
+}
+
+@media (max-width: 395px){
+    .file-container{
+        flex: 85%;
+        max-width: 90%;
+    }
 }

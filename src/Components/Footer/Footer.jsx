@@ -1,16 +1,29 @@
 import "./Footer.css";
 
+
+function display_contactenos_info(){
+    if(document.getElementById("info-contacto").style.display === "block"){
+        document.getElementById("info-contacto").style.display = "none";
+        document.getElementById("show-contact-icon").style.display = "block";
+        document.getElementById("hide-contact-icon").style.display = "none";
+    }else{
+        document.getElementById("info-contacto").style.display = "block";
+        document.getElementById("show-contact-icon").style.display = "none";
+        document.getElementById("hide-contact-icon").style.display = "block";
+    }
+}
+
 export default function footer(){
     return(
-        <footer className="Footer-container">
+        <footer id="Footer-container" className="navbar-fixed-bottom">
             <div className="sections-container">
                 <div className="contact-container">
                     <div>
                         <h4 className="title-contact">¡Contacténos!
-                            <i className="fas fa-eye" id="show-contact-icon"></i>
-                            <i className="fas fa-eye-slash" id="hide-contact-icon"></i>
+                            <i className="fas fa-eye" id="show-contact-icon" onClick={display_contactenos_info}></i>
+                            <i className="fas fa-eye-slash" id="hide-contact-icon" onClick={display_contactenos_info}></i>
                         </h4>
-                        <p className="info-contacto">
+                        <p id="info-contacto">
                             <div className="contact-item">
                                 <div className="subtitle-contact">
                                     <i className="fas fa-thumbtack contact-icon"></i>{' '}{'\u00A0'} Ubicación: 

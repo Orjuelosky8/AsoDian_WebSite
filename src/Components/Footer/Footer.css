@@ -1,17 +1,14 @@
-html {
-    min-height: 100%;
-    position: relative;
-}
-
-.Footer-container{
+#Footer-container{
     text-align: center;
     background-color: darkgreen;
     box-shadow: 0px -1px 22px orange;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     left: 0;
-    /* position: relative; Se soluciona el problema de que aparezca todo el rato, pero no lo puedo pegar contra los margenes */
-    width: 100%;
+    width: 100%; */
+    position: relative; /*Se soluciona el problema de fixed que aparezca todo el rato, pero no lo puedo pegar contra los margen */
+    margin-left: -10px;
+    margin-bottom: -10px;
 }
 
 .sections-container{
@@ -42,11 +39,35 @@ h4{
     margin-right: 5%;
 }
 
-#show-contact-icon{
-    display: none;
-}
+#show-contact-icon, 
 #hide-contact-icon{
+    width: 16px;
+    height: 14px;
+    margin: auto;
+    margin-bottom: 18px;
+    margin-top: 4px;
+    padding: 3px;
     display: none;
+    border-color: cyan;
+    border-right: 2px;
+    border-top: 1px;
+    border-bottom: 2px;
+    border-left: 1px;
+    border-style: solid;
+    border-radius: 20%;
+    color: cyan;
+    background:rgb(32, 98, 26);
+}
+
+
+#show-contact-icon:hover, 
+#hide-contact-icon:hover{
+    background: orange ;
+    border-color: rgb(202, 240, 255);
+}
+
+#info-contacto{
+    display: block;
 }
 
 .contact-item{
@@ -293,6 +314,12 @@ h4{
 }
 
 @media (max-width: 976px) {
+    .Footer-container{
+        position: relative; /*Se soluciona el problema de fixed que aparezca todo el rato, pero no lo puedo pegar contra los margen */
+        margin-left: -10px;
+        margin-bottom: -10px;
+        width: calc(100% + 20px); 
+    }
     #mail-contact{
         margin-top: 18px;
     }
@@ -378,6 +405,13 @@ h4{
     #hr-top-social-media{
         width: 80%;
     }
+    #show-contact-icon{
+        display: block;
+        cursor: pointer;
+    }
+    #info-contacto{
+        display: none;
+    }
 }
 
 @media (max-width: 400px){
@@ -385,14 +419,7 @@ h4{
         margin-top: 5px;
     }
     .title-contact{
-        color: skyblue;
-    }
-    .contact-item{
-        display: none;
-    }
-    #show-contact-icon{
-        display: block;
-        cursor: pointer;
+        color: rgb(0, 195, 255);
     }
 }
 

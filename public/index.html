@@ -29,7 +29,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="webContainer"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -41,4 +41,30 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script> 
+    // var heightWebContainer = document.getElementById("webContainer").style.height;
+    // var heightFooter = document.getElementById("Footer-container").style.height;
+    // var sHeight = screen.height;
+    // heightWebContainer = sHeight;
+    // document.getElementById("webContainer").style.height = (heightWebContainer-heightFooter)+"px";
+    var browserHeight = window.innerHeight;
+    var elemFooter = document.getElementById("Footer-container");
+    var footerHeight = elemFooter.clientHeight;
+    var idealHeight = browserHeight - footerHeight - 99; // no 100 para dejar el margen de los decimales y que no se vea ninguna linea blanca abajo.
+    var viewElem = document.getElementsByClassName("general-window-container");
+    
+    for (var i = 0; i < viewElem.length; i++) {
+      viewElem[i].style.minHeight = idealHeight+"px";
+    }
+    ////// document.getElementById("general-window-container").style.height = idealHeight+"px";
+
+    // alert(
+    //   "Page Size: "+document.documentElement.scrollHeight+"px"+
+    //   "\nBrowser size: "+window.innerHeight+"px"+
+    //   "\nScreen Height: "+screen.height+"px"+
+    //   "\nFooter's Height: "+elemFooter.clientHeight+"px"+
+    //   "\nIdeal Height: "+idealHeight+"px"+
+    //   "\nAnd the final height of the content is: "+viewElem[0].style.minHeight
+    //   );
+  </script>
 </html>

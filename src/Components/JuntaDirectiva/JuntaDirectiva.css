@@ -11,14 +11,10 @@
     background: #00b806;
 }
 
-.JuntaDirectiva-container{
-    width: 88%;
-    margin: auto;
-    margin-top: 90px;
-    margin-bottom: 340px;
-    border: 2px solid black;
-    background: beige;
+#JuntaDirectiva-container{
+    position: static; /*default*/
 }
+
 .subtitles-container{
     display: flex;
     padding-right: 5%;
