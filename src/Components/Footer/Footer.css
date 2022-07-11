@@ -15,7 +15,7 @@
     display: flex;
 }
 
-hr{
+.hrFooter{
     border-right: 1px yellowgreen solid;
     border-left: none;
     border-top: none;
@@ -390,7 +390,7 @@ h4{
     h4{
         text-align: center;
     }
-    hr{
+    .hrFooter{
         border-bottom: 1px solid greenyellow;
         width: 44%;
         margin-top: 5px;

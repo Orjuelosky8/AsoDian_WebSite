@@ -1,5 +1,5 @@
 import "./JuntaDirectiva.css";
-import Presidenta from "./../../Assets/img/JuntaDirectiva/Presidente.jpg";
+// import Presidenta from "./../../Assets/img/JuntaDirectiva/Presidente.jpg";
 
 export default function footer(){
     return(
@@ -17,7 +17,7 @@ export default function footer(){
                                 GLADYS MARINA ACERO ANGEL
                             </p>
                             <div className="img-member">
-                                <img src={Presidenta} alt="Presidenta Asodian"/>
+                                <img src="https://cej.org.co/wp-content/uploads/2018/04/voto_duque.png" alt="Presidenta Asodian"/>
                             </div>
                             <div className="description">
                                 <p className="cargo-member">
@@ -27,7 +27,7 @@ export default function footer(){
                                     <li>Profesión</li>
                                     <li>Cargo</li>
                                     <li>x años funcionari@ DIAN</li>
-                                    <li>5 años ASODIAN</li>
+                                    <li>x años ASODIAN</li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -50,8 +50,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -74,8 +74,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -98,8 +98,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -122,8 +122,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -146,8 +146,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -170,8 +170,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -194,8 +194,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -218,8 +218,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -242,8 +242,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -273,8 +273,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>
@@ -297,8 +297,8 @@ export default function footer(){
                                 <ul className="info-member">
                                     <li>Profesión</li>
                                     <li>Cargo</li>
-                                    <li>40 años funcionaria DIAN</li>
-                                    <li>5 años ASODIAN </li>
+                                    <li>x años funcionaria DIAN</li>
+                                    <li>x años ASODIAN </li>
                                 </ul>
                                 <p className="contact-member">
                                     <span className="subtitles">Contacto:</span> <span className="mails-members">gaceroa@dian.gov.co </span>

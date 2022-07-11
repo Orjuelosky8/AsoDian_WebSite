@@ -59,7 +59,7 @@ export default function footer(){
                         </p>
                     </div>
                 </div>
-                <hr id="hr-1"/>
+                <hr id="hr-1" className="hrFooter"/>
                 <div className="main-info-container">
                     <div className="title-footer">
                         <span id="title-letter-a">A</span>
@@ -76,9 +76,9 @@ export default function footer(){
                         <br/><span>Unión y Ética Sindical</span>
                     </div>
                 </div>
-                <hr/>
+                <hr className="hrFooter"/>
                 <div className="social-media-container">
-                    <hr id="hr-top-social-media"/>
+                    <hr id="hr-top-social-media" className="hrFooter"/>
                     <h4>¡Síguenos en Nuestras Redes Sociales!</h4>
                     <div className="icons-media">
                         <i className="fab fa-instagram fa-2x icon-media"></i>
