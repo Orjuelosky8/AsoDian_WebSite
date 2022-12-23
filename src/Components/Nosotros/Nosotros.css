@@ -1,7 +1,8 @@
-.Nosotros-container{
+#Nosotros-container{
     margin-top: 90px;
 }
 
 #title-section-aboutus{
     width: 8ch;
+    text-align: right;
 }

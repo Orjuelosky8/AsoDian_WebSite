@@ -1,6 +1,6 @@
 import "./Nosotros.css";
 
-export default function footer(){
+export default function aboutUs(){
     return(
         <div className="general-window-container">
             <div id="Nosotros-container" className="content-container">

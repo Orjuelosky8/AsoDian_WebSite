@@ -2,7 +2,7 @@ import "./Afiliacion.css";
 import FormatoAfiliacion from "./../../Assets/pdf/formato_afiliacion_asodian.pdf";
 import EstatutosAsoDian from "./../../Assets/pdf/formato_afiliacion_asodian.pdf";
 
-export default function footer(){
+export default function afiliation(){
     return(
         <div className="general-window-container">
             <div id="Afiliacion-container"  className="content-container">

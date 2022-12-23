@@ -19,7 +19,7 @@
     width: 70%;
     margin: auto;
     margin-left: 15%;
-    border: 4px skyblue;
+    border: 4px rgb(0, 181, 253);
     border-style: groove;
     animation-name: menu-animation;
     animation-duration: 5s;
@@ -56,7 +56,7 @@
 
 .options-menu ol li a{
     text-decoration: none;
-    color: red;
+    color: rgb(0, 132, 255);
 }
 
 
@@ -109,22 +109,7 @@
 }
 
 .file-preview:hover{
-    opacity: 0.8;
-    filter: grayscale(0.2);
-    cursor: pointer;
-}
-
-/* Debo activar este boton mediante Javascript; ¡ RECORDAR ! */
-.view-document-button{
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 10px;
-    border: 5px groove gold;
-    background: rgb(255, 238, 142);
-    left: 50%;
-    transform: translate(-50%, -50%);
+    box-shadow: 0px -2px 5px yellowgreen;
 }
 
 .file-container h3{
@@ -237,6 +222,7 @@
         margin: 0 auto 15px auto;
     }
 }
+
 @media (max-width: 1800px) {
     .file-container{
         height: auto;
@@ -249,7 +235,7 @@
         margin: 0 auto 15px auto;
     }
 }
-/*circuitverse.org*/
+
 @media (max-width: 1200px){
     .menu-and-files-container{
         flex-direction: column;

@@ -1,0 +1,17 @@
+#gallery-container{
+    text-align: left;
+    margin-top: 90px;
+}
+
+#title-section-convenios{
+    width: 7ch;
+}
+
+.individualItemGallery img{
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.individualItemGallery img:hover{
+    opacity: 1;
+}

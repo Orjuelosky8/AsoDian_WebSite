@@ -1,6 +1,8 @@
 import "./Archivos.css";
 import BoletinSindical1 from "./../../Assets/pdf/formato_afiliacion_asodian.pdf"
 import PreviewBoletinSindical1 from "./../../Assets/img/preview-pdf-boletinsindical2.PNG"
+import PreviewComunicado1 from "./../../Assets/img/Archivos_Preview/ex5.png"
+import PreviewComunicado2 from "./../../Assets/img/Archivos_Preview/ex6.jpg"
 
 
 // var button_preview  = document.getElementsByClassName("file-preview");
@@ -18,7 +20,7 @@ import PreviewBoletinSindical1 from "./../../Assets/img/preview-pdf-boletinsindi
 // }
 
 
-export default function footer(){
+export default function files(){
     return(
         <div className="general-window-container">
             <div id="Archivos-container" className="content-container">
@@ -37,20 +39,20 @@ export default function footer(){
                                     <li><a href="#asamblea-files">Asamblea</a></li>
                                     <li><a href="#fsm-files">Federacion Sindical Mundial</a></li>
                                     <li><a href="#mesa-negoc-files">Mesa de Negociacion</a></li>
-                                    <li>Enero 2022</li>
-                                    <li>Febrero 2022</li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                     <div className="all-groups-files-container">
                         <div className="title-group-files" id="boletin-sindical-files"  >
-                            <h3><hr/>★ ----  Boletin Sindical  ---- ★<hr/></h3>
+                            <h3><hr/>★ ----  Boletines Sindicales  ---- ★<hr/></h3>
                         </div>
                         <div className="group-files-container">
                             <div className="file-container boletin-sindical-file">
                                 <div className="main-content-container-file">
-                                    <embed src={BoletinSindical1} type="" className="pdf-container"/>
+                                    <div className="file-preview">
+                                        <img src={PreviewComunicado2} type="" className="pdf-container" alt=""/>
+                                    </div>
                                     <h3>↓ - - - - - - - - - - - - ↓ <br/> Boletin Sindical #1</h3>
                                     <p>Una aproximación a la realidad actual de los estudiantes universitarios que se vive desde que inicio la pandemia por COVID-19.</p>
                                     <button className="button-download-file">
@@ -76,12 +78,7 @@ export default function footer(){
                             <div className="file-container  boletin-sindical-file">
                                 <div className="main-content-container-file">
                                     <div className="file-preview">
-                                        <img src={PreviewBoletinSindical1} type="" className="pdf-container" alt=""/>
-                                        <button className="view-document-button">
-                                            <a href={BoletinSindical1} targer="_blank">
-                                                Ver el documento
-                                            </a>
-                                        </button>
+                                        <img src={PreviewComunicado1} type="" className="pdf-container" alt=""/>
                                     </div>
                                     <h3>↓ - - - - - - - - - - - - ↓ <br/> Boletin Sindical #2</h3>
                                     <p>La crisis para los empleadores que se esta viviendo en estados unidos: "Nadie quiere trabajar debido a los subsidios que da el gobierno, es suficiente para las personas para vivir bien".
@@ -109,14 +106,9 @@ export default function footer(){
                             <div className="file-container  boletin-sindical-file">
                                 <div className="main-content-container-file">
                                     <div className="file-preview">
-                                        <img src={PreviewBoletinSindical1} type="" className="pdf-container" alt=""/>
-                                        <button className="view-document-button">
-                                            <a href={BoletinSindical1} targer="_blank">
-                                                Ver el documento
-                                            </a>
-                                        </button>
+                                        <img src={PreviewComunicado2} type="" className="pdf-container" alt=""/>
                                     </div>
-                                    <h3>↓ - - - - - - - - - - - - ↓ <br/> Boletin Sindical #2</h3>
+                                    <h3>↓ - - - - - - - - - - - - ↓ <br/> Boletin Sindical #3</h3>
                                     <p>La crisis para los empleadores que se esta viviendo en estados unidos: "Nadie quiere trabajar debido a los subsidios que da el gobierno, es suficiente para las personas para vivir bien".
                                     </p>
                                     <button className="button-download-file">

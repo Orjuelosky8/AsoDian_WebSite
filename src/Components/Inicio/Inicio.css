@@ -234,12 +234,17 @@
 }
 
 .objectiveHeaderContainer{
+    position: relative;
     display: flex;
     background: darkred;
     border-radius: 5px;
     box-shadow: 1px 5px 15px #a2a2a2;
-    margin: 0px 20px -20px 20px;
-    position: relative;
+    margin: 0px 20px -2px 20px;
+    /* position: relative; -- This fixes the problem of overlapping in the two divs from "Inicio" but it overlaps the navBar, so, it cant happen. */
+}
+
+.objectiveHeaderContainer:hover{
+    box-shadow: 0px -2px 15px red;
 }
 
 .objectiveHeaderContainer > .titleHeaderContainer{
@@ -258,7 +263,7 @@
 }
 
 .bodyObjectiveContainer:hover{
-    box-shadow: 1px 1px 20px #d2d2d2;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, .4);
 }
 
 .bodyObjectiveContainer p{
@@ -522,13 +527,13 @@
     font-size: 17px;
 }
 
-#buttonMoreInfoContainer{
+.buttonMoreInfo_checkGallery_Container{
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
 }
 
-#buttonMoreInfoContainer button{
+.buttonMoreInfo_checkGallery_Container button{
     font-size: 22px;
     color: rgb(245, 245, 245);
     background-color: #005203;
@@ -549,7 +554,7 @@
     padding: 10px;
     margin-top: 5px;
 }
-#buttonMoreInfoContainer button:hover{
+.buttonMoreInfo_checkGallery_Container button:hover{
     color: rgb(10, 10, 10);
     background: linear-gradient(90deg, white, orangered, white);
     /* background: linear-gradient(90deg, #0a5eac, orangered, #04bd0e); */
@@ -572,6 +577,139 @@
     margin-right: 8px;
     color: #0074e0;
 }
+
+/* ------------ ACTUAL GALLERY ------------ */
+#miniGalleryContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+
+#itemsMiniGallery_Container{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 65%;
+}
+
+.itemMiniGallery_Container{
+    display: none;
+    width: 100%;
+}
+
+.itemMiniGallery_Container:first-child{
+    display: block;
+}
+
+.itemMiniGallery_Container img{
+    user-select: none;
+    width: 100%;
+    /* max-width: 100%; // Podria cambiar la posicion de las flechas de cambio de slide  */
+    height: 580px;
+    /* max-height: 600px; // Podemos tener unas imagenes mas grandes que otras.
+    min-height: 500px; */
+    transition: 2s border-radius;
+    z-index: 100;
+}
+.itemMiniGallery_Container img:hover{
+    border-radius: 3%;
+    box-shadow: 0px 0px 5px rgb(60, 60, 60);
+}
+
+.itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+    width: fit-content;
+    margin: auto;
+    margin-top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    padding: 5px 15px 10px 15px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: rgba(0, 144, 4, 0.4);
+    height: 30px;
+    position: relative;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div:first-child{
+    color: orange;
+    font-family: monospace, cursive;
+    font-weight: bold;
+}
+.itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div{
+    user-select: none;
+}
+.itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div:last-child{
+    user-select: auto;
+    font-style: oblique;
+}
+
+#controlsMiniGallery_Container{
+    position: absolute;
+    width: 65%;
+    top: calc(50% - 30px);
+}
+
+#controlsMiniGallery_Container > button{
+    color: #009004;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 48px;
+    cursor: pointer;
+    font-family: sans-serif;
+    position: absolute;
+    border: none;
+}
+#controlsMiniGallery_Container > button:hover{
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+#controlsMiniGallery_Container #previousItemGallery{
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    left: 0;
+    padding: 0 10px 0 10px;     
+}
+#controlsMiniGallery_Container #nextItemGallery{
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+    right: 0;
+    padding: 0 10px 0 10px;    
+}
+
+#indexMiniGallery_Container{
+    position: absolute;
+    z-index: 3;
+    bottom: 10%;
+}
+
+#indexMiniGallery_Container > .indexButtonMiniGallery{
+    background-color: transparent;
+    border-radius: 30%;
+    padding:6px;
+    margin-right: 5px;
+    border: 2px solid #009004;
+    cursor: pointer;
+}
+#indexMiniGallery_Container > .indexButtonMiniGallery:first-child{
+    background-color: #009004;
+    box-shadow: 0px 0px 5px;
+}
+
+#galleryButtonContainer{
+    font-size: 25px;
+    margin: auto;
+    margin-left: 8px;
+    color: #0074e0;
+}
+
 
 /* ***** GALLERY ***** */
 
@@ -656,6 +794,12 @@
     opacity: 1;
 }
 
+@media (max-width: 2000px){
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 1600px) {
     #summaryItemsContainer_Inicio{  
         width: 98%;
@@ -663,8 +807,22 @@
     #SecondHeader_SummaryContainerItem > h2{
         font-size: 22px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         font-size: 20px;
+    }
+    #itemsMiniGallery_Container{
+        width: 70%;
+    }
+    
+    .itemMiniGallery_Container img{
+        height: 600px;
+    }
+    
+    #controlsMiniGallery_Container{
+        width: 70%;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+        font-size: 18px;
     }
 }
 
@@ -682,11 +840,18 @@
     .title_HeaderContainerItem{
         font-size: 26px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         max-width: 300px;
     }
     #FMSLink{
         font-size: 12px;
+    }
+    .itemMiniGallery_Container img{
+        height: 550px;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 
@@ -702,6 +867,16 @@
     #FMSLink{
         font-size: 17px;
     }
+
+    #itemsMiniGallery_Container{
+        width: 80%;
+    }
+    .itemMiniGallery_Container img{
+        height: 500px;
+    }
+    #controlsMiniGallery_Container{
+        width: 80%;
+    }
 }
 @media (max-width: 880px){
     #summaryItemsContainer_Inicio > .SummaryContainerItem{
@@ -711,11 +886,23 @@
     .text_bodyItem{
         font-size: 17px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         max-width: 250px;
     }
     #FMSLink{
         font-size: 12px;
+    }
+    #itemsMiniGallery_Container{
+        width: 90%;
+    }
+    .itemMiniGallery_Container img{
+        height: 450px;
+    }
+    #controlsMiniGallery_Container{
+        width: 90%;
+    }
+    #indexMiniGallery_Container{
+        bottom: 12%;
     }
 }
 
@@ -750,8 +937,21 @@
     .text_bodyItem, .textBodyObjective{
         font-size: 19px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         max-width: 400px;
+    }
+    .itemMiniGallery_Container img{
+        height: 400px;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div{
+        display: none;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div:last-child{
+        display: block;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+        font-size: 14px;
+        font-weight: bold;
     }
 }
 
@@ -773,7 +973,7 @@
     .title_HeaderContainerItem{
         font-size: 22px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         max-width: 250px;
         font-size: 16px;
     }
@@ -785,6 +985,28 @@
     }
     #FMSLink{
         font-size: 12px;
+    }
+
+    #itemsMiniGallery_Container{
+        width: 99%;
+    }
+    .itemMiniGallery_Container img{
+        height: 400px;
+    }
+    #controlsMiniGallery_Container{
+        width: 99%;
+    }
+    #indexMiniGallery_Container{
+        bottom: 14%;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer{
+        font-size: 18px;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div:last-child{
+        display: none;
+    }
+    .itemMiniGallery_Container .imagesCaptionMiniGalleryContainer div:first-child{
+        display: block;
     }
 }
 
@@ -826,12 +1048,18 @@
     .title_HeaderContainerItem{
         font-size: 18px;
     }
-    #buttonMoreInfoContainer button{
+    .buttonMoreInfo_checkGallery_Container button{
         max-width: 200px;
         font-size: 14px;
     }
     #Second_textBodyItem{
         font-size: 12px;
+    }
+    .itemMiniGallery_Container img{
+        height: 300px;
+    }
+    #indexMiniGallery_Container{
+        bottom: 22%;
     }
 }
 
@@ -849,5 +1077,8 @@
     }
     #FMSLink{
         font-size: 7px;
+    }
+    .itemMiniGallery_Container img{
+        height: 200px;
     }
 }
