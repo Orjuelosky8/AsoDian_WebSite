@@ -1,3 +1,7 @@
+#Archivos-container{
+    margin-bottom: 20px;
+}
+
 #title-section-files{
     width: 8ch;
 }
@@ -13,16 +17,18 @@
 
 #div-menu{
     padding: 20px;
+    background-color: rgb(128, 128, 128);
     background-image: url(https://www.wallpapertip.com/wmimgs/34-346972_parchment-wallpaper-hd.jpg);
     background-size: cover;
+    background-color: lightgray;
     border-radius: 10%;
     width: 70%;
     margin: auto;
     margin-left: 15%;
-    border: 4px rgb(0, 181, 253);
+    border: 4px orangered;
     border-style: groove;
     animation-name: menu-animation;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count:infinite;
     animation-delay: 50ms;
     animation-timing-function: linear;
@@ -31,37 +37,64 @@
 }
 @keyframes menu-animation {
     0%{transform: rotate(0deg);}
-    30%{transform: rotate(-8deg);}
-    70%{transform: rotate(8deg);}
+    30%{transform: rotate(-5deg);}
+    70%{transform: rotate(5deg);}
     100%{transform: rotate(0deg);}
 }
 
 #title-menu{
+    color: blueviolet;
+    color: black;
     font-weight: 200;
-    text-align: left;
+    text-align: center;
+    font-size: 15px;
 }
 
-.options-menu ol{
-    list-style: square;
-    margin-left: -15px;
+#title-menu span{
+    display: block;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.options-menu ol li{
-    cursor: pointer;
+#options-menu{
+    /* background-image: url(https://www.wallpapertip.com/wmimgs/34-346972_parchment-wallpaper-hd.jpg);
+    background-size: cover; */
+    background-color: rgba(216, 137, 0, 0.4);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#options-menu ol{
+    list-style: decimal;
+    color: darkblue;
+    margin-top: 0;
+}
+
+#options-menu ol li{
     margin-top: 10px;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-variant: small-caps;
 }
 
-.options-menu ol li a{
+#options-menu ol li a{
+    cursor: alias;
     text-decoration: none;
     color: rgb(0, 132, 255);
+    user-select: none;
+}
+#options-menu ol li a:hover{
+    color: blueviolet;
+    text-shadow: 0px 0px 2px blueviolet;
 }
 
 
 .all-groups-files-container{
-    background: lightgray;
+    background-color: lightgray;
     display: block;
     width: 75%;
     margin: auto;
@@ -73,22 +106,27 @@
     padding-top: 8px;
     font-family: stencil, cursive, 'Times New Roman';
     font-size: 25px;
-    margin-top: -30px;
-    margin-bottom: -20px;
+    margin-bottom: 15px; 
+}
+.title-group-files h3{
+    margin: 0;
 }
 .title-group-files hr{
-    width: 100%;
+    width: 99%;
+    margin: 5px auto 5px auto;
 }
-.group-files-container{
+
+.allFilesGroup{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch; /* Para que todos los containers tengan el mismo tamaño */
+    align-items: flex-start; /* Para que no tengan el mismo tamaño los containers * */
     width: 100%;
     margin: auto;
 }
 
 .file-container{
-    height: auto;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-radius: 5%;
@@ -96,93 +134,139 @@
     flex: 20%;
     max-width: 19%;
     margin: 0 auto 15px auto;
+    position: relative;
+    /* min-height: 450px;
+    max-height: 450px; */
+    height: auto;
 }
 
 .main-content-container-file{
-
-}
+    /* height: 415px; */
+    /* min-height: 75%; */
+    height: auto;
+}   
 
 .file-preview{
     display: inline-block;
-    height: 180px;
     width: 100%;
+    transition: 1s box-shadow;
+    /* height: 40%; */
 }
 
 .file-preview:hover{
-    box-shadow: 0px -2px 5px yellowgreen;
+    box-shadow: 0px -5px 5px rgb(0, 123, 172);
 }
 
-.file-container h3{
+.file-preview img{
+    border-radius: 1%;
+    width: 100%;
+    height: auto;
+    border-bottom: 8px solid rgb(0, 123, 172);
+}
+
+.file-summary{
+    /* height: 30%; */
+    /* min-height: 40%;
+    max-height: 50%;  */
+}
+
+.file-container .main-content-container-file .file-summary h3{
     text-align: center;
     color: greenyellow;
-    width: 70%;
-    margin: auto;
-    margin-top: -5px;
-    margin-bottom: -10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
     /* padding-top: 5px; */
     /* border-top: 2px dashed salmon; */
 }
 
-.file-container p{
+.file-container .main-content-container-file .file-summary p{
+    margin: 0;
     margin-right: 5%;
     margin-left: 5%;
     color: #eee;
+    text-align: justify;
+    font-size: 18px;
 }
 
-.pdf-container{
-    border-radius: 1%;
-    width: 100%;
-    height: 180px;
-    border-bottom: 8px solid rgb(0, 123, 172);
+.fileContainer-footer{
+    /* height: 25%; */
+    height: auto;
+    margin-top: 15px;
 }
 
-.iframe-pdf{
-    width: 100%;
-    height: 50%;
+.file-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 20%; */
+    margin-top: 5px;
+    /* height: 15%; */
+    /* margin-bottom: 20px; */
 }
 
 .button-download-file{
-    width: 30%;
-    margin-top: -10px;
-    margin-left: 35%;
-    margin-bottom: 10px;
+    font-size: 16px;
+    width: 50%;
     padding: 5px;
-    border-radius: 2%;
-    border: 1px solid red;
-    background: green;
-    box-shadow: 3px 3px 4px;
+    cursor: grabbing;
+    border-color:royalblue;
+    /* border-color: salmon;
+    border-color:tomato; */
+    border-radius: 20px;
+    border-style:ridge;
+    border-right-width: 3px ;
+    border-left-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 5px;
+    /* border-width: 4px; */
+    box-shadow: 0px 0px 4px white;
+    background: linear-gradient(90deg, goldenrod, gold, gold, yellow, yellowgreen);
+    background-color: gold;
+    transition: border-color 2s;
+    opacity: 0.9;
 }
 .button-download-file:hover{
-    border-radius: 2%;
-    border: 1px solid white;
-    background: forestgreen;
     box-shadow: 0px 0px 8px white;
+    /* background: linear-gradient(90deg, gold, yellow, yellowgreen); */
+    border-color: blueviolet;
+    opacity: 1;
 }
 
 .button-download-file a{
-    color: yellow;
+    color: rgb(0, 123, 172);
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .button-download-file a:hover{
-    color: skyblue;
+    /* color: skyblue; */
     font-weight: bold;
     /* text-decoration: underline; */
-    text-shadow: 1px 1px 1px red;
+    text-shadow: 1px 1px 1px whitesmoke;
 }
 
+
 .bibliografia-document{
+    display: block;
+    margin-top: 4%;
     border-top: 2px solid rgb(0, 123, 172);
     font-size: 12px;
     user-select: none;
+    /* height: 8%; */
 }
 
 .bibliografia-document ol{
     display: flex;
     list-style: none;
-    color: orange;
+    color: goldenrod;
     width: 80%;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 8px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .bibliografia-document li{
@@ -194,45 +278,26 @@
 }
 
 .separador-bibliografia{
-    height: 12px;
+    min-height: 12px;
+    height: 20px;
     margin: auto;
     margin-left: 20px;
     margin-right: 20px;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    border: rgb(0, 123, 172) 1px solid;
-}
-
-.author-file{
-    color: goldenrod;
+    border: none;
+    border-right: rgb(0, 123, 172) 3px dashed;
 }
 
 @media (max-width: 2600px) {
     .file-container{
-        height: auto;
-        margin-left: 8px;
-        margin-right: 8px;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-        border-radius: 5%;
-        background: #222;
         flex: 25%;
         max-width: 24%;
-        margin: 0 auto 15px auto;
     }
 }
 
 @media (max-width: 1800px) {
     .file-container{
-        height: auto;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-        border-radius: 5%;
-        background: #222;
         flex: 28%;
         max-width: 32%;
-        margin: 0 auto 15px auto;
     }
 }
 
@@ -246,11 +311,11 @@
     #div-menu{
         width: 40%;
         margin: auto;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         margin-top: 20px;
         position: static;
         text-align: center;
-        animation: none;
+        /* animation: none; */
     }
     .all-groups-files-container{
         width: 96%;
@@ -261,19 +326,108 @@
     }
 }
 
+@media (max-width: 820px){
+    #fsm .title-group-files{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 720px){
+    #div-menu{
+        width: 55%;
+    }
+    #options-menu{
+        width: 70%;
+        margin: 10px auto;
+    }
+    .button-download-file{
+        font-size: 18px;
+    }
     .file-container{
         flex: 70%;
         max-width: 70%;
     }
-    #div-menu{
-        width: 65%;
+}
+
+@media (max-width: 640px){
+    .title-group-files{
+        font-size: 27px;
+    }
+    #boletinesSindicales .title-group-files{
+        font-size: 23px;
+    }
+    #fsm .title-group-files{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 520px){
+    #options-menu{
+        width: 90%;
+    }
+    .title-group-files{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 18px !important; 
+    }
+    #comunicados .title-group-files{
+        font-size: 22px !important; 
+    }
+    #asambleas .title-group-files{
+        font-size: 22px !important; 
+    }
+    .title-group-files h3{
+        margin: 0;
+    }
+    .button-download-file{
+        font-size: 15px;
+    }
+    .file-container{
+        flex: 80%;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 395px){
+    #div-menu{
+        width: 70%;
+    }
+    .title-group-files{
+        font-size: 15px !important; 
+    }
+    #comunicados .title-group-files{
+        font-size: 18px !important; 
+    }
+    #asambleas .title-group-files{
+        font-size: 20px !important; 
+    }
     .file-container{
         flex: 85%;
         max-width: 90%;
+    }
+    .file-container .main-content-container-file .file-summary h3{
+        font-size: 20px;
+    }
+    .file-container .main-content-container-file .file-summary p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 290px){
+    .title-group-files{
+        font-size: 15px !important; 
+    }
+    #comunicados .title-group-files{
+        font-size: 15px !important; 
+    }
+    #asambleas .title-group-files{
+        font-size: 15px !important; 
+    }
+    .bibliografia-document{
+        display: none;
+    }
+    .button-download-file{
+        margin-bottom: 11px;
+        font-size: 12px;
     }
 }

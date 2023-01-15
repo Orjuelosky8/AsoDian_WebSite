@@ -97,7 +97,7 @@ class NavBar extends React.Component {
             <div className="container-nav">
                 <div className="left-side">
                     <img src={Asodian_logo} alt="Logo de ASODIAN" className="Logo"/>
-                    <p className="title-container"><span className="title"><Link to="/" className="title">ASODIAN</Link></span> 
+                    <p className="title-container"><span className="title" onClick={(e) => setFocus()}><Link to="/" className="title">ASODIAN</Link></span> 
                     <br /><span className="Razon-social">Asociacion Sindical de Funcionarios de la DIAN</span></p>
                 </div>
                 <div id="opciones-nav">

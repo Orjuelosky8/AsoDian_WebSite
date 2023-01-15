@@ -23,7 +23,7 @@ export default function afiliation(){
                         <hr id="hr-afterPreview"/>
                         <br/>¿Tiene problemas con la visualizacion del archivo? Pulse  
                         <a href={FormatoAfiliacion}><b><u> AQUÍ </u></b></a>
-                        para visuaizarlo/descargarlo en su dispositivo.
+                        para visualizarlo/descargarlo en su dispositivo.
                     </p>
                 </div>
             </div>

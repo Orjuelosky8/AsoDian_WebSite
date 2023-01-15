@@ -9,6 +9,7 @@
     position: relative; /*Se soluciona el problema de fixed que aparezca todo el rato, pero no lo puedo pegar contra los margen */
     margin-left: -10px;
     margin-bottom: -10px;
+    min-width: 100%;
 }
 
 .sections-container{
@@ -68,6 +69,8 @@ h4{
 
 #info-contacto{
     display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .contact-item{

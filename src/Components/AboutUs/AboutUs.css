@@ -1,0 +1,261 @@
+#Nosotros-container{
+    margin-top: 90px;
+}
+
+#title-section-aboutus{
+    width: 8ch;
+    text-align: right;
+}
+
+#AboutUsContent{
+    display: block;
+    width: 70%;
+    margin: 33px auto;
+}
+
+.outerSCAU-left,
+.outerSCAU-right
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.outerSCAU-left{
+    justify-content: flex-start;
+}
+.outerSCAU-right{
+    justify-content: flex-end;
+}
+
+.singularCardAboutUs{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: gold;
+    width: 55.4%;
+    transition: 2s transform;
+}
+
+.leftSCAU{
+    flex-direction: row;
+}
+.leftSCAU:hover{
+    transform: translateX(60px);
+}
+
+.rightSCAU{
+    flex-direction: row-reverse;
+}
+.rightSCAU:hover{
+    transform: translateX(-60px);
+}
+
+.contentCardAU{
+    
+}
+
+.titleCardAU{
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.leftSCAU .titleCardAU{
+    justify-content: left;
+    padding-left: 40px;
+    border-top-left-radius: 15px;
+}
+.rightSCAU .titleCardAU{
+    justify-content: right;
+    padding-right: 40px;
+    border-top-right-radius: 15px;
+}
+
+.titleCardAU h3{
+    margin: 0;
+    color: gray;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Cooper Black', 'Goudy Stout', Forte, Arial;
+    text-shadow: 1px 1px 1px black;
+}
+
+.descriptionCardAU{
+    text-align: justify;
+    font-size: 20px;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Consolas, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+#itemsHistoryAU{
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+#itemsHistoryAU li{
+    padding-bottom: 15px;
+}
+
+.imgCardAU{
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgCardAU img{
+    height: 100px;
+    width: 100px;
+    padding: 8px;
+    user-select: none;
+}
+.leftSCAU .imgCardAU{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.rightSCAU .imgCardAU{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@media (max-width: 1800px) {
+    #AboutUsContent{
+        width: 80%;
+    }
+    .titleCardAU h3{
+        font-size: 25px;
+    }
+    .descriptionCardAU{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1250px) {
+    #AboutUsContent{
+        width: 90%;
+    }
+    .singularCardAboutUs{
+        width: 75%;
+    }
+}
+
+@media (max-width: 880px) {
+    .singularCardAboutUs{
+        width: 90%;
+    }
+    .leftSCAU .titleCardAU{
+        padding-left: 30px;
+    }
+    .rightSCAU .titleCardAU{
+        padding-right: 30px;
+    }    
+    .descriptionCardAU{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .singularCardAboutUs{
+        width: 100%;
+    }
+    .leftSCAU:hover{
+        transform: none;
+    }
+    .rightSCAU:hover{
+        transform: none;
+    }
+    .titleCardAU{
+        height: 50px;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .titleCardAU h3{
+        font-size: 22px;
+    }
+    .descriptionCardAU{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #itemsHistoryAU{
+        padding-left: 0px;
+    }
+    #itemsHistoryAU li{
+        padding-bottom: 10px;
+    }
+    .imgCardAU{
+        height: 90px;
+        border-bottom-left-radius: 0px !important; 
+        border-bottom-right-radius: 0px !important;
+    }
+    .imgCardAU img{
+        height: 75px;
+        width: 75px;
+    }
+    .leftSCAU .contentCardAU .descriptionCardAU{
+        margin-right: -100px;
+    }
+    .rightSCAU .contentCardAU .descriptionCardAU{
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .titleCardAU{
+        height: 35px;
+    }
+    .titleCardAU h3{
+        font-size: 19px;
+    }
+    .descriptionCardAU{
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #itemsHistoryAU li{
+        padding-bottom: 4px;
+    }
+    .imgCardAU{
+        height: 75px;
+    }
+    .imgCardAU img{
+        height: 65px;
+        width: 65px;
+    }
+}
+
+@media (max-width: 330px) {
+    .titleCardAU{
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+        height: 20px;
+    }
+    .titleCardAU h3{
+        font-size: 15px;
+    }
+    .descriptionCardAU{
+        font-size: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .imgCardAU{
+        height: 60px;
+    }
+    .imgCardAU img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 225px) {
+    .titleCardAU h3{
+        font-size: 10px;
+    }
+}

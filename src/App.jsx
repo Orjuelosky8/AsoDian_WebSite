@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Inicio from './Components/Inicio/Inicio';
 import History from './Components/Historia/Historia';
-import Nosotros from './Components/Nosotros/Nosotros';
+import Nosotros from './Components/AboutUs/AboutUs';
 import JuntaDirectiva from './Components/JuntaDirectiva/JuntaDirectiva';
 import Galeria from './Components/Galeria/Galeria';
 import Afiliacion from './Components/Afiliacion/Afiliacion';

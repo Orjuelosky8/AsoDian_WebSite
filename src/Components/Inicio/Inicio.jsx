@@ -323,51 +323,6 @@ export default function mainWindow(){
                         </a>
                     </div>
                 </div>
-                {/* <div>
-                    <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-                        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-                        crossorigin="anonymous"
-                    />
-                    <Carousel>
-                        <Carousel.Item interval={1000}>
-                            <img
-                            className="d-block w-100"
-                            src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt7f6d5e8c735a705c/63939e226250206beaf09020/GettyImages-1448008976.jpg"
-                            alt="First slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={500}>
-                            <img
-                                className="d-block w-100"
-                                src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt7f6d5e8c735a705c/63939e226250206beaf09020/GettyImages-1448008976.jpg"
-                                alt="Second slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                            className="d-block w-100"
-                            src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt7f6d5e8c735a705c/63939e226250206beaf09020/GettyImages-1448008976.jpg"
-                            alt="Third slide"
-                            />
-                            <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                            </p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </div> */}
             </div>
         </div>
     )

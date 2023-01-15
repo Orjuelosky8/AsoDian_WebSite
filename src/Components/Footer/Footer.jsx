@@ -23,7 +23,7 @@ export default function footer(){
                             <i className="fas fa-eye" id="show-contact-icon" onClick={display_contactenos_info}></i>
                             <i className="fas fa-eye-slash" id="hide-contact-icon" onClick={display_contactenos_info}></i>
                         </h4>
-                        <p id="info-contacto">
+                        <div id="info-contacto">
                             <div className="contact-item">
                                 <div className="subtitle-contact">
                                     <i className="fas fa-thumbtack contact-icon"></i>{' '}{'\u00A0'} Ubicación: 
@@ -56,7 +56,7 @@ export default function footer(){
                                     (+57) 601 7428973 ext 936265
                                 </div>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <hr id="hr-1" className="hrFooter"/>
@@ -89,7 +89,7 @@ export default function footer(){
                     <p className="link-web-media">www.asodian.org</p>
                 </div>
             </div>
-            <div className="copyright"> © Derechos Reservados 2022 - ASODIAN</div>
+            <div className="copyright"> © Derechos Reservados 2023 - ASODIAN</div>
         </footer>
     )
 }
