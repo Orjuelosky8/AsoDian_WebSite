@@ -32,7 +32,6 @@
     display: flex;
     margin-top: 20px;
     border-radius: 15px;
-    background-color: gold;
     width: 55.4%;
     transition: 2s transform;
 }
@@ -51,12 +50,54 @@
     transform: translateX(-60px);
 }
 
+/* COLORES BACKGROUND CARDS */
+
+#historiaCardAU{
+    background-color: gold;
+}
+#historiaCardAU .titleCardAU{
+    background-color: yellow;
+}
+#historiaCardAU .imgCardAU{
+    background-color: goldenrod;
+}
+
+#objetivoCardAU{
+    background-color: rgb(240, 0, 0);
+}
+#objetivoCardAU .titleCardAU{
+    background-color: orangered;
+}
+#objetivoCardAU .imgCardAU{
+    background-color: #b60202;
+}
+
+#misionCardAU{
+    background-color: lime;
+}
+#misionCardAU .titleCardAU{
+    background-color: greenyellow;
+}
+#misionCardAU .imgCardAU{
+    background-color: green;
+}
+
+#visionCardAU{
+    background-color: #0074e0;
+}
+#visionCardAU .titleCardAU{
+    background-color: skyblue;
+}
+#visionCardAU .imgCardAU{
+    background-color: #2e31eb;
+}
+/* Fin colores background */
+
 .contentCardAU{
     
 }
 
 .titleCardAU{
-    background-color: yellow;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -105,7 +146,6 @@
 }
 
 .imgCardAU{
-    background-color: goldenrod;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,7 +8,7 @@ export default function aboutUs(){
                 <hr className="title-hr"/>
                 <div id="AboutUsContent">
                 <div className="outerSCAU-left">
-                    <div className="singularCardAboutUs leftSCAU">
+                    <div className="singularCardAboutUs leftSCAU" id="historiaCardAU">
                         <div className="contentCardAU">
                             <div className="titleCardAU"><h3>NUESTRA HISTORIA...</h3></div>
                             <div className="descriptionCardAU">
@@ -41,7 +41,7 @@ export default function aboutUs(){
                     </div>
                 </div>
                 <div className="outerSCAU-right">
-                    <div className="singularCardAboutUs rightSCAU">
+                    <div className="singularCardAboutUs rightSCAU" id="objetivoCardAU">
                         <div className="contentCardAU">
                             <div className="titleCardAU"><h3>NUESTRO OBJETIVO...</h3></div>
                             <div className="descriptionCardAU">
@@ -63,7 +63,7 @@ export default function aboutUs(){
                     </div>
                 </div>
                 <div className="outerSCAU-left">
-                    <div className="singularCardAboutUs leftSCAU">
+                    <div className="singularCardAboutUs leftSCAU" id="misionCardAU">
                         <div className="contentCardAU">
                             <div className="titleCardAU"><h3>NUESTRA MISIÓN...</h3></div>
                             <div className="descriptionCardAU">
@@ -83,7 +83,7 @@ export default function aboutUs(){
                     </div>
                 </div>
                 <div className="outerSCAU-right">
-                    <div className="singularCardAboutUs rightSCAU">
+                    <div className="singularCardAboutUs rightSCAU" id="visionCardAU">
                         <div className="contentCardAU">
                             <div className="titleCardAU"><h3>NUESTRA VISIÓN...</h3></div>
                             <div className="descriptionCardAU">
