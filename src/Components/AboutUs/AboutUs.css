@@ -34,6 +34,7 @@
     border-radius: 15px;
     width: 55.4%;
     transition: 2s transform;
+    cursor: default;
 }
 
 .leftSCAU{
@@ -69,7 +70,7 @@
     background-color: orangered;
 }
 #objetivoCardAU .imgCardAU{
-    background-color: #b60202;
+    background-color: darkred;
 }
 
 #misionCardAU{

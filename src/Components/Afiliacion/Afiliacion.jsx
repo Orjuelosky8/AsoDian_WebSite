@@ -8,13 +8,13 @@ export default function afiliation(){
             <div id="Afiliacion-container"  className="content-container">
                 <h1 className="title-section" id ="title-section-afiliation">AFILIACION</h1>
                 <hr className="title-hr"/>
-                <p className="afiliation-textp">
+                <p className="afiliation-text">
                     ¿Deseas conocer mas acerca del proceso de afiliacion para nuestra organizacion sindical?
                     <br />A continuación encontrarás el archivo correspondiente al "Formato de afiliacion y autorizacion de descuento":
                 </p>
-                <iframe id="preview-formato-afiliacion" src={FormatoAfiliacion} frameborder="0" title="Formato de Afiliacion"/>
+                <iframe id="preview-formato-afiliacion" src={FormatoAfiliacion} frameBorder="0" title="Formato de Afiliacion"/>
                 <div id="case-error-preview">
-                    <p className="afiliation-textp">
+                    <div className="afiliation-text">
                         <hr id="hr-afterPreview"/>
                         <span id="afiliationWarning">
                             Antes de llenar el formato (en caso de hacerlo), no olvides primero leer el documento donde reposan los estatutos de nuestra organizacion
@@ -24,7 +24,7 @@ export default function afiliation(){
                         <br/>¿Tiene problemas con la visualizacion del archivo? Pulse  
                         <a href={FormatoAfiliacion}><b><u> AQUÍ </u></b></a>
                         para visualizarlo/descargarlo en su dispositivo.
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
