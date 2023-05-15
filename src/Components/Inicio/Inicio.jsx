@@ -269,7 +269,7 @@ export default function mainWindow(){
                                 <div className="imagesCaptionMiniGalleryContainer">
                                     <div>Imagen 1 </div> 
                                     <div>&nbsp;:&nbsp;</div>
-                                    <div>"Caption Img que estaba en la reunion con el director"</div>
+                                    <div>"Primer encuentro de ASODIAN con sus afiliados."</div>
                                 </div>
                             </div>
                             <div className="itemMiniGallery_Container">
@@ -277,7 +277,7 @@ export default function mainWindow(){
                                 <div className="imagesCaptionMiniGalleryContainer">
                                     <div>Imagen 2 </div> 
                                     <div>&nbsp;:&nbsp;</div>
-                                    <div>""</div>
+                                    <div>"Reunion con el director de la DIAN y las organizaciones sindicales."</div>
                                 </div>
                             </div>
                             <div className="itemMiniGallery_Container">
@@ -285,7 +285,7 @@ export default function mainWindow(){
                                 <div className="imagesCaptionMiniGalleryContainer">
                                     <div>Imagen 3 </div> 
                                     <div>&nbsp;:&nbsp;</div>
-                                    <div>""</div>
+                                    <div>"Ciclo de Conferencias"</div>
                                 </div>
                             </div>
                             <div className="itemMiniGallery_Container">
@@ -293,7 +293,7 @@ export default function mainWindow(){
                                 <div className="imagesCaptionMiniGalleryContainer">
                                     <div>Imagen 4 </div> 
                                     <div>&nbsp;:&nbsp;</div>
-                                    <div>""</div>
+                                    <div>"Encuentreo con el señor director y las organizaciones sindicales."</div>
                                 </div>
                             </div>
                         </div>

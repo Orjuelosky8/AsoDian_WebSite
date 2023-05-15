@@ -78,7 +78,7 @@ export default function aboutUs(){
                             </div>
                         </div>
                         <div className="imgCardAU">
-                            <img src="https://eltallerdehector.com/wp-content/uploads/2022/06/63caa-stitch-tierno-png.png" alt="" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/1207/1207808.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,8 @@ export default function aboutUs(){
                             </div>
                         </div>
                         <div className="imgCardAU">
-                            <img src="https://eltallerdehector.com/wp-content/uploads/2022/06/63caa-stitch-tierno-png.png" alt=""/>
+                            <img src="https://cdn-icons-png.flaticon.com/512/417/417045.png" alt=""/>
+                            {/* <img src="https://eltallerdehector.com/wp-content/uploads/2022/06/63caa-stitch-tierno-png.png" alt=""/> */}
                         </div>
                     </div>
                 </div>

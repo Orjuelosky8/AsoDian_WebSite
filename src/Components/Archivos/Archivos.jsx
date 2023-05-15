@@ -1,4 +1,5 @@
 import "./Archivos.css";
+/* IMGS */ 
 //Comunicados
 import PreviewCom1 from "./../../Assets/img/Archivos_Preview/Comunicados/c1.png"
 import PreviewCom2 from "./../../Assets/img/Archivos_Preview/Comunicados/c2.png"
@@ -17,6 +18,10 @@ import PreviewA1 from "./../../Assets/img/Archivos_Preview/Asamblea/borrador.png
 import PreviewFSM1 from "./../../Assets/img/Archivos_Preview/FSM/borrador.png"
 //Mesa negociacion
 import PreviewMn1 from "./../../Assets/img/Archivos_Preview/MesaNegociacion/borrador.png"
+
+/* PDFS */
+// Comunicados
+
 
 // var button_preview  = document.getElementsByClassName("file-preview");
 // var number_container = document.getElementsByClassName("view-document-button")
@@ -80,7 +85,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./1Plan_Estudios_Nuevo.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href="c.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">

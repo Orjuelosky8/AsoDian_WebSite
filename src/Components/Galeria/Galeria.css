@@ -1,13 +1,209 @@
-#gallery-container{
+#gallery-container {
     text-align: left;
     margin-top: 90px;
 }
 
-#title-section-convenios{
+#title-section-convenios {
     width: 7ch;
 }
 
-#mainImageGallery_Container{
+.selectedImage {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    /* 70% de la pantalla */
+    object-fit: contain;
+}
+
+.selectedImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-height: 80vh;
+    /* Altura máxima del contenedor en función de la ventana */
+    overflow: hidden;
+    margin-top: 4vh;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.imageWrapper p{
+    width: calc(100% - 40px);
+    background-color: rgb(184, 184, 184);
+    color: darkgreen;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image-nav-button {
+    background-color: rgba(76, 175, 80, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.image-nav-button:hover {
+    background-color: rgba(69, 160, 73, 0.8);
+}
+
+.image-nav-prev {
+    left: 10px;
+}
+
+.image-nav-next {
+    right: 10px;
+}
+
+/* Estilos Galería */
+.gallery-container {
+    width: 100%;
+}
+
+.gallery-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallery-description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.selectedImageContainer {
+    margin-bottom: 2rem;
+}
+
+.mini-gallery {
+    /* background-color: rgb(186, 186, 186); */
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 8px;
+}
+
+.mini-gallery img {
+    width: 100%;
+    height: 350px;
+    /* height: auto; en caso de querer que todas las imagenesse vean con tamaño original */
+    cursor: pointer;
+    object-fit: cover;
+    /* Para */
+    opacity: 0.85;
+    transition: transform 0.4s;
+}
+
+.mini-gallery img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 10;
+}
+
+.miniGalleryImage.selected {
+    /* Estilos para imágenes seleccionadas, por ejemplo, un borde resaltado */
+    opacity: 0.95;
+    transform: scale(0.8);
+}
+
+.miniGalleryImage.selected:hover {
+    /* Estilos para imágenes seleccionadas, por ejemplo, un borde resaltado */
+    transform: scale(0.9);
+    opacity: 0.85;
+}
+
+.video-section {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.video-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: rgb(0, 92, 212);
+    padding-top: 8px;
+    font-family: stencil, cursive, 'Times New Roman';
+    font-size: 40px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+  }
+  
+  .video-wrapper {
+    flex-basis: calc(33% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .embed-responsive {
+    width: 100%;
+    /* Aquí puedes ajustar la relación de aspecto para el reproductor de video */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+  }
+  
+  .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.video-description-gallery {
+    margin: 10px 20px;
+}
+
+#galleryFooter{
+    width: 40%;
+    text-align: center;
+    margin: 40px auto 40px auto;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+@media (max-width: 600px) {
+    .mini-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .mini-gallery img {
+        width: 100%;
+        height: 350px;
+        /* height: auto; en caso de querer que todas las imagenesse vean con tamaño original */
+        cursor: pointer;
+        object-fit: cover;
+        /* Para */
+        opacity: 0.85;
+        transition: transform 0.4s;
+    }
+}
+
+/* #mainImageGallery_Container{
     margin-top: 50px;
     display: grid;
     place-items: center;
@@ -84,4 +280,4 @@
         width: 350px;
         height: 200px;
     }
-}
+} */

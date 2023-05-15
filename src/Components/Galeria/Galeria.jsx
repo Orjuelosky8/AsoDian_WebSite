@@ -1,14 +1,129 @@
 import "./Galeria.css";
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
-export default function gallery(){
-    return(
+function importAll(r) {
+    return r.keys().map(r);
+};
+
+const imgs = importAll(require.context('./../../Assets/img/Gallery', false, /\.(jpe?g)$/));
+
+const images = [
+    // { src: "https://phantom-marca.unidadeditorial.es/836d4a9e5976318bde3e9f8c0f666f21/resize/1320/f/jpg/assets/multimedia/imagenes/2022/12/21/16716506561096.jpg", description: "Descripción de la imagen 1" },
+    { src: imgs[0].default, description: "Primer encuentro de ASODIAN con sus afiliados." },
+    { src: imgs[1].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
+    { src: imgs[2].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
+    { src: imgs[3].default, description: "Director de la Dian en la reunion." },
+    { src: imgs[4].default, description: "Director de la Dian en la reunion." },
+    { src: imgs[5].default, description: "Descripción de la imagen 6" },
+    { src: imgs[6].default, description: "Ciclo de Conferencias" },
+    { src: imgs[7].default, description: "Inauguración de la oficina de ASODIAN" },
+    { src: imgs[8].default, description: "Oficina de ASODIAN" },
+    { src: imgs[9].default, description: "Saludo del señor Director a ASODIAN" },
+    { src: imgs[10].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
+    { src: imgs[11].default, description: "Encuentreo con el señor director y las organizaciones sindicales." },
+    { src: imgs[12].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
+    { src: imgs[13].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
+    // { src: "https://pbs.twimg.com/media/ECWq8UmW4AAkeUg.jpg", description: "Descripción de la imagen 8" },
+];
+
+const videos = [
+    { id: "video1", src: "https://www.youtube.com/embed/Xx49ku0lheM", title: "¿Que es la Dian?", description: "Ubicación de la DIAN en el contexto nacional, su mapa de procesos, competencias de fiscalización, valoración probatoria y las generalidades de los documentos electrónicos." },
+    { id: "video2", src: "https://www.youtube.com/embed/PxChpj7mnd4", title: "Cultura Ciudadana y de Contribucion", description: "Esta conferencia te mostrará el contexto general, objetivo, valores, ciudadanía (antecedente histórico), ciudadanía y Estado ((de derecho y social de derecho), deberes y derechos, dimensiones), obligaciones tributarias, tributos (diferenciación entre tributos e impuestos, clases), características de los impuestos y ciclo de la contribución. " },
+];
+
+const Gallery = () => {
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+    const selectedImageContainerRef = useRef(null);
+
+    const handleThumbnailClick = (index) => {
+        setSelectedImageIndex(index);
+        selectedImageContainerRef.current.scrollIntoView();
+    };
+
+    const handlePrevImage = useCallback(() => {
+        setSelectedImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    }, []);
+
+    const handleNextImage = useCallback(() => {
+        setSelectedImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    }, []);
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (selectedImageIndex !== null) {
+                if (event.key === 'ArrowLeft') {
+                    handlePrevImage();
+                } else if (event.key === 'ArrowRight') {
+                    handleNextImage();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [selectedImageIndex, handlePrevImage, handleNextImage]);
+
+    return (
         <div className="general-window-container">
             <div id="gallery-container" className="content-container">
-                <div id="galeriaHeader">
-                    <h1 className="title-section" id ="title-section-convenios">GALERIA</h1>
-                    <hr className="title-hr"/>
+                <div id="galeriaHeader" ref={selectedImageContainerRef}>
+                    <h1 className="title-section" id="title-section-convenios">GALERIA</h1>
+                    <hr className="title-hr" />
+                    {/* <p id="firstInfoGallery">Seleccione una imagen para visualizarla junto con su descripcion aquí.</p> */}
                 </div>
-                <div id="mainImageGallery_Container">
+                <div className="selectedImageContainer">
+                    {selectedImageIndex !== null && (
+                        <>
+                            <div className="imageWrapper">
+                                <img className="selectedImage" src={images[selectedImageIndex].src} alt={images[selectedImageIndex].description} />
+                                <button className="image-nav-button image-nav-prev" onClick={handlePrevImage}>&#10094;</button>
+                                <button className="image-nav-button image-nav-next" onClick={handleNextImage}>&#10095;</button>
+                                <p>{images[selectedImageIndex].description}</p>
+                            </div>
+                        </>
+                    )}
+                </div>
+
+                <div className="mini-gallery">
+                    {images.map((image, index) => (
+                        <img
+                            key={index}
+                            src={image.src}
+                            alt={image.description}
+                            className={`miniGalleryImage${index === selectedImageIndex ? " selected" : ""}`}
+                            onClick={() => handleThumbnailClick(index)}
+                        />
+                    ))}
+                </div>
+
+                <div className="video-section">
+                    <h2 className="video-title">★ ---- VIDEOS ---- ★</h2>
+                    <div className="video-container">
+                        {videos.map((video, index) => (
+                            <div key={index} className="video-wrapper">
+                                <h3 className="video-title-gallery">{video.title}</h3>
+                                <div className="embed-responsive">
+                                    <iframe
+                                        id={video.id}
+                                        className="embed-responsive-item"
+                                        src={video.src}
+                                        allowFullScreen
+                                        title={video.description}
+                                    ></iframe>
+                                </div>
+                                <p className="video-description-gallery">{video.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div id="galleryFooter">
+                    Esta ha sido la galeria de nuestra organizacion sindical, proximamente estaremos subiendo mas contenido; día a día trabajamos por la union y etica sindical.
+                </div>
+                {/* <div id="mainImageGallery_Container">
                     <div id="currentImageGallery">
                         <img src="" alt="" />
                     </div>
@@ -79,18 +194,19 @@ export default function gallery(){
 
                 <div id="galleryFooter">
                     FIN
-                </div>
+                </div> */}
             </div>
         </div>
     )
 }
+export default Gallery;
 
 // window.onload = () => {
 //     const imgs = Array.from(document.getElementsByClassName("individualItemGallery"));
 //     alert(imgs)
 //     if (imgs != null) {
 //         imgs.onclick = () => {
-//             alert("JDSJD")            
+//             alert("JDSJD")
 //                 // imgs.forEach((element, index) => {
 //                 //     element.addEventListener("click", setImagee(index));
 //                 // });
@@ -98,12 +214,12 @@ export default function gallery(){
 //     }
 // }
 
-function setImage(index) {
-    const imgs = Array.from(document.getElementsByClassName("individualItemGallery"));
-    const urlImgChoosen = imgs[index].firstChild.src;
-    const descriptionImgChoosen = imgs[index].firstChild.alt;
+// function setImage(index) {
+//     const imgs = Array.from(document.getElementsByClassName("individualItemGallery"));
+//     const urlImgChoosen = imgs[index].firstChild.src;
+//     const descriptionImgChoosen = imgs[index].firstChild.alt;
 
-    document.getElementById("currentImageGallery").firstChild.src = urlImgChoosen;
-    document.getElementById("captionCurrentImageGallery").firstChild.innerHTML = descriptionImgChoosen;
-    window.scrollTo(0, 125);
-}
+//     document.getElementById("currentImageGallery").firstChild.src = urlImgChoosen;
+//     document.getElementById("captionCurrentImageGallery").firstChild.innerHTML = descriptionImgChoosen;
+//     window.scrollTo(0, 125);
+// }

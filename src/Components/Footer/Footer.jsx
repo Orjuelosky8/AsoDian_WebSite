@@ -1,5 +1,5 @@
 import "./Footer.css";
-
+import swal from 'sweetalert';
 
 function display_contactenos_info(){
     if(document.getElementById("info-contacto").style.display === "block"){
@@ -81,15 +81,48 @@ export default function footer(){
                     <hr id="hr-top-social-media" className="hrFooter"/>
                     <h4>¡Síguenos en Nuestras Redes Sociales!</h4>
                     <div className="icons-media">
-                        <i className="fab fa-instagram fa-2x icon-media"></i>
-                        <i className="fab fa-youtube fa-2x icon-media"></i>
-                        <i className="fab fa-facebook fa-2x icon-media"></i>
+                        <a href="https://www.instagram.com/asodian1/" target={"_blank"} rel="noreferrer"><i className="fab fa-instagram fa-2x icon-media"></i></a>
+                        <a href="https://www.youtube.com/@Asodian1" target={"_blank"} rel="noreferrer"><i className="fab fa-youtube fa-2x icon-media"></i></a>
+                        <a href="#/" target={"_blank"} rel="noreferrer"><i className="fab fa-facebook fa-2x icon-media"></i></a>
                     </div>
                     <p className="link-web-mediaa"><span>Instagram -</span><span>YouTube -</span><span>Facebook</span></p>
                     <p className="link-web-media">www.asodian.org</p>
                 </div>
             </div>
-            <div className="copyright"> © Derechos Reservados 2023 - ASODIAN</div>
+            <div id="copyright" onClick={(e) => {
+                if(e.detail === 3){
+                    // alert("Hello!\nThis is Daniel Orjuela (Developer of this WebSite).\n\nYou've made 3 Clicks on CopyRight Succesfully!\nDeveloper's Info is now displayed at the Bottom of the WebSite :D\n\nContact if you need.");
+                    // document.getElementById("developer-copyright").innerHTML = "D\nsa"
+                    swal({
+                        title: "Developer Information Unlocked!",
+                        text: "\nYou've made 3 Clicks on CopyRight Container Succesfully :D\n\nNow you have the option of seeing the contact information of this website's developer.\n\nWant to contact the developer?",
+                        icon: "info",
+                        buttons: ["I don't", "I do, let me see the contact info!"],
+                        timer: 33000,
+                        closeOnClickOutside: false,
+                        className: "developerFirstAlert",
+                      })
+                      .then((contact) => {
+                        if (contact) {
+                          swal({
+                            text: "Hi there!, this is Daniel Orjuela, Developer of this Website.\n\nApparently you want to contact me, so here you can see displayed my contact's information:\n\nMail: daniel.orju@gmail.com\nInstagram: daniel.8.orjuela\n\nThis window will close automatically soon!\nHowever, the email information will remain displayed at the bottom of the website in case you need it.",
+                            icon: "success",
+                            timer: 20000,
+                            className: "developerSecondAlert",
+                          });
+                          document.getElementById("developer-copyright").style.display = "block";
+                          document.getElementById("developer-copyright").innerHTML = "Contacto Desarrollador: <em><u>daniel.orju@gmail.com</u></em>";
+                        } else {
+                          swal("Okay, information not displayed...\n\nHave a good day!", {
+                                dangerMode: true,
+                                icon: "error",
+                                className: "developerThirdAlert",
+                            });
+                            document.getElementById("developer-copyright").style.display = "none";
+                        }
+                    });
+            }}}> © Derechos Reservados 2023 - ASODIAN</div>
+            <div id="developer-copyright"></div>
         </footer>
     )
 }
