@@ -20,7 +20,7 @@ const images = [
     { src: imgs[8].default, description: "Oficina de ASODIAN" },
     { src: imgs[9].default, description: "Saludo del señor Director a ASODIAN" },
     { src: imgs[10].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
-    { src: imgs[11].default, description: "Encuentreo con el señor director y las organizaciones sindicales." },
+    { src: imgs[11].default, description: "Encuentro con el señor director y las organizaciones sindicales." },
     { src: imgs[12].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
     { src: imgs[13].default, description: "Reunion con el director de la DIAN y las organizaciones sindicales." },
     // { src: "https://pbs.twimg.com/media/ECWq8UmW4AAkeUg.jpg", description: "Descripción de la imagen 8" },

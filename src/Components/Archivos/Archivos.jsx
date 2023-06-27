@@ -7,17 +7,27 @@ import PreviewCom3 from "./../../Assets/img/Archivos_Preview/Comunicados/c3.png"
 import PreviewCom4 from "./../../Assets/img/Archivos_Preview/Comunicados/c4.png"
 import PreviewCom5 from "./../../Assets/img/Archivos_Preview/Comunicados/c5.png"
 import PreviewCom6 from "./../../Assets/img/Archivos_Preview/Comunicados/c6.png"
+import PreviewCom7 from "./../../Assets/img/Archivos_Preview/Comunicados/c7.png"
+import PreviewCom8 from "./../../Assets/img/Archivos_Preview/Comunicados/c8.png"
+import PdfCom1 from "./../../Assets/pdf/comunicado1.pdf"
+import PdfCom2 from "./../../Assets/pdf/comunicado2.pdf"
+import PdfCom3 from "./../../Assets/pdf/comunicado3.pdf"
+import PdfCom4 from "./../../Assets/pdf/comunicado4.pdf"
+import PdfCom5 from "./../../Assets/pdf/comunicado5.pdf"
+import PdfCom6 from "./../../Assets/pdf/comunicado6.pdf"
+import PdfCom7 from "./../../Assets/pdf/comunicado7.pdf"
+import PdfCom8 from "./../../Assets/pdf/comunicado8.pdf"
 // Boletines Sindicales
 import PreviewBS1 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs1.png"
-import PreviewBS2 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs2.png"
-import PreviewBS3 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs3.png"
-import PreviewBS4 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs4.png"
+// import PreviewBS2 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs2.png"
+// import PreviewBS3 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs3.png"
+// import PreviewBS4 from "./../../Assets/img/Archivos_Preview/BoletinesSindicales/bs4.png"
 //Asmablea
-import PreviewA1 from "./../../Assets/img/Archivos_Preview/Asamblea/borrador.png"
-//FSM
-import PreviewFSM1 from "./../../Assets/img/Archivos_Preview/FSM/borrador.png"
-//Mesa negociacion
-import PreviewMn1 from "./../../Assets/img/Archivos_Preview/MesaNegociacion/borrador.png"
+// import PreviewA1 from "./../../Assets/img/Archivos_Preview/Asamblea/borrador.png"
+// //FSM
+// import PreviewFSM1 from "./../../Assets/img/Archivos_Preview/FSM/borrador.png"
+// //Mesa negociacion
+// import PreviewMn1 from "./../../Assets/img/Archivos_Preview/MesaNegociacion/borrador.png"
 
 /* PDFS */
 // Comunicados
@@ -85,7 +95,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="c.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom1} target="_blank" rel="noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -120,7 +130,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./Parcial_3.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom2} target="_blank" rel="noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -155,7 +165,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./Parcial_3.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom3} target="_blank" rel="noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -190,7 +200,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./Parcial_3.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom4} target="_blank" rel="noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -225,7 +235,7 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./Parcial_3.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom5} target="_blank" rel="noopener noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -260,7 +270,77 @@ export default function files(){
                                     <div className="fileContainer-footer">
                                         <div className="file-download">
                                             <button className="button-download-file">
-                                                <a href="./Parcial_3.pdf" target="_blank">DESCARGAR<br/>ARCHIVO</a>
+                                                <a href={PdfCom6} target="_blank" rel="noopener noreferrer">DESCARGAR<br/>ARCHIVO</a>
+                                            </button>
+                                        </div>
+                                        <div className="bibliografia-document">
+                                            <ol>
+                                                <li>
+                                                    <abbr title="Autor del documento" className="author-file">Manuel Gantiva</abbr>
+                                                </li>
+                                                <hr className="separador-bibliografia"/>
+                                                <li>
+                                                    <abbr title="Fecha del Documento" className="date-file">12/01/2021</abbr>
+                                                </li>
+                                                <hr className="separador-bibliografia"/>
+                                                <li>
+                                                    <abbr title="Número de páginas" className="pages-file">3 páginas</abbr>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="file-container">
+                                    <div className="main-content-container-file">
+                                        <div className="file-preview">
+                                            <img src={PreviewCom7} type="" alt=""/>
+                                        </div>
+                                        <div className="file-summary">
+                                            <h3>↓ - - - - - - - - - ↓ <br/> Comunicado #6</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="fileContainer-footer">
+                                        <div className="file-download">
+                                            <button className="button-download-file">
+                                                <a href={PdfCom7} target="_blank" rel="noopener noreferrer">DESCARGAR<br/>ARCHIVO</a>
+                                            </button>
+                                        </div>
+                                        <div className="bibliografia-document">
+                                            <ol>
+                                                <li>
+                                                    <abbr title="Autor del documento" className="author-file">Manuel Gantiva</abbr>
+                                                </li>
+                                                <hr className="separador-bibliografia"/>
+                                                <li>
+                                                    <abbr title="Fecha del Documento" className="date-file">12/01/2021</abbr>
+                                                </li>
+                                                <hr className="separador-bibliografia"/>
+                                                <li>
+                                                    <abbr title="Número de páginas" className="pages-file">3 páginas</abbr>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="file-container">
+                                    <div className="main-content-container-file">
+                                        <div className="file-preview">
+                                            <img src={PreviewCom8} type="" alt=""/>
+                                        </div>
+                                        <div className="file-summary">
+                                            <h3>↓ - - - - - - - - - ↓ <br/> Comunicado #6</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="fileContainer-footer">
+                                        <div className="file-download">
+                                            <button className="button-download-file">
+                                                <a href={PdfCom8} target="_blank" rel="noopener noreferrer">DESCARGAR<br/>ARCHIVO</a>
                                             </button>
                                         </div>
                                         <div className="bibliografia-document">
@@ -322,7 +402,7 @@ export default function files(){
                                         </div>
                                     </div>
                                 </div>
-                                <div className="file-container">
+                                {/* <div className="file-container">
                                     <div className="main-content-container-file">
                                         <div className="file-preview">
                                             <img src={PreviewBS2} type="" alt=""/>
@@ -426,14 +506,14 @@ export default function files(){
                                             </ol>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="groupFilesContainer" id="asambleas">
                             <div className="title-group-files">
                                 <h3><hr/>★ ---- ASAMBLEAS ---- ★<hr/></h3>
                             </div>
-                            <div className="allFilesGroup">
+                            {/* <div className="allFilesGroup">
                                 <div className="file-container">
                                     <div className="main-content-container-file">
                                         <div className="file-preview">
@@ -504,13 +584,13 @@ export default function files(){
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div> 
                         <div className="groupFilesContainer" id="fsm">
                             <div className="title-group-files">
                                 <h3><hr/>★ ---- FEDERACION SINDICAL MUNDIAL (FSM) ---- ★<hr/></h3>
                             </div>
-                            <div className="allFilesGroup">
+                            {/* <div className="allFilesGroup">
                                 <div className="file-container">
                                     <div className="main-content-container-file">
                                         <div className="file-preview">
@@ -546,13 +626,13 @@ export default function files(){
                                         </div>
                                     </div>
                                 </div> 
-                            </div>
+                            </div> */}
                         </div> 
                         <div className="groupFilesContainer" id="mesaNegociacion">
                             <div className="title-group-files">
                                 <h3><hr/>★ ---- MESA DE NEGOCIACION ---- ★<hr/></h3>
                             </div>
-                            <div className="allFilesGroup">
+                            {/* <div className="allFilesGroup">
                                 <div className="file-container">
                                     <div className="main-content-container-file">
                                         <div className="file-preview">
@@ -588,7 +668,7 @@ export default function files(){
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div> 
                     </div>
                 </div>

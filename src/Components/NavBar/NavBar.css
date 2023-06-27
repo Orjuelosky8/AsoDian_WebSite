@@ -223,8 +223,6 @@
     }
     #opciones-nav{
         width: 100%;
-        height: calc(auto + 50px) !important;
-        opacity: 0.9;
         overflow: scroll;
     }
     .btnNav{
